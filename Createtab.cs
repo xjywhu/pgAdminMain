@@ -15,6 +15,7 @@ namespace pgAdminMain
     {
         string dbname;
         MainForm f;
+       
         public Createtab(string dbname,MainForm f)
         {
             InitializeComponent();
@@ -27,8 +28,7 @@ namespace pgAdminMain
             /*连接数据库，在数据库中创建表*/
             //var con = new NpgsqlConnection(MainForm.connString + ";DataBase = " + dbname);
             //con.Open();
-            //var con = f.Establishconnection("sc");
- 
+            //var con = f.Establishconnection(f.Find(f.treeView1,"sc"));
             //var cmdtab = new NpgsqlCommand("CREATE TABLE weather(city varchar(80),temp_lo int,temp_hi int,prcp real,date date);", con);
             //cmdtab.ExecuteNonQuery();
             //this.Close();

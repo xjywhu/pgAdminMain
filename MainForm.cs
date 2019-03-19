@@ -47,24 +47,15 @@ namespace pgAdminMain
             return tn;
 
         }
-        /*通过表名，寻找表所在的数据库*/
-        public string findDataBase(string table_name)
+ 
+        /*根据选中的table节点，寻找数据库*/
+        public NpgsqlConnection Establishconnection(TreeNode table)
         {
-            string DataBase_name="";
-            foreach (string key in dbDic.Keys)
-            {
-                if (dbDic[key].Contains(table_name))
-                    DataBase_name = key;
-            }
-            return DataBase_name;
-        }
-        /*通过表名，连接到表所在的数据库*/
-        public NpgsqlConnection Establishconnection(string table_name)
-        {
-            var con = new NpgsqlConnection(connString + ";DataBase = " + findDataBase(table_name));
+            var con = new NpgsqlConnection(connString + ";DataBase = " + table.Parent.Parent.Parent.Text.ToString());
             con.Open();
             return con;
         }
+
         private void dataBaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Createdb cdb = new Createdb(con,this);
