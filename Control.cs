@@ -9,7 +9,7 @@ namespace pgAdminMain
     static class Control
     {
         public static Connection_zhx connection;
-       public static Login login;
+        public static Login login;
         public static MainForm mainform;
     }
 }

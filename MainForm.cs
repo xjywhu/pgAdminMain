@@ -13,10 +13,10 @@ namespace pgAdminMain
 {
     public partial class MainForm : Form
     {
-        //static string connString = "Host=localhost;Port=5432;Username=postgres;Password=xjy19991012";
-        //NpgsqlConnection con = new NpgsqlConnection(connString);
-        static string connString = "Host=" + Control.connection.getSever() + ";Port=" + Control.connection.getPort() + ";Username=" + Control.connection.getUsername() + ";Password=" + Control.connection.getPassword();
+        public static string connString = "Host=" + Control.connection.getSever() + ";Port=" + Control.connection.getPort() + ";Username=" + Control.connection.getUsername() + ";Password=" + Control.connection.getPassword();
         NpgsqlConnection con = Control.connection.SqlConn;
+        /*存储数据库名和表名的字典*/
+        public static Dictionary<string, List<string>> dbDic = new Dictionary<string, List<string>>();
         public MainForm(){
             InitializeComponent();
             //con.Open();
@@ -47,14 +47,28 @@ namespace pgAdminMain
             return tn;
 
         }
-
-
+        /*通过表名，寻找表所在的数据库*/
+        public string findDataBase(string table_name)
+        {
+            string DataBase_name="";
+            foreach (string key in dbDic.Keys)
+            {
+                if (dbDic[key].Contains(table_name))
+                    DataBase_name = key;
+            }
+            return DataBase_name;
+        }
+        /*通过表名，连接到表所在的数据库*/
+        public NpgsqlConnection Establishconnection(string table_name)
+        {
+            var con = new NpgsqlConnection(connString + ";DataBase = " + findDataBase(table_name));
+            con.Open();
+            return con;
+        }
         private void dataBaseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Createdb cdb = new Createdb(con,this);
             cdb.Show();
-            
-
         }
 
         private void bindNode()
@@ -64,6 +78,7 @@ namespace pgAdminMain
             DataTable dt = new DataTable();
             da.Fill(dt);
             for (int i = 0; i < dt.Rows.Count; i++) {
+                List<string> tabname = new List<string>();
                 /*database node*/
                 var dtnd = new TreeNode();
                 dtnd.Text = dt.Rows[i]["datname"].ToString();
@@ -79,7 +94,7 @@ namespace pgAdminMain
                 sche.ContextMenuStrip = contextMenuStripsche;
                 /*table node*/
                 var tab = new TreeNode();
-                tab.Name = "Table";
+                tab.Name = dt.Rows[i]["datname"].ToString();
                 tab.Text = "Table";
                 tab.ImageIndex = 4;
                 tab.SelectedImageIndex = 4;
@@ -103,11 +118,15 @@ namespace pgAdminMain
                     NpgsqlDataAdapter da1 = new NpgsqlDataAdapter(cmd1);
                     DataTable dt1 = new DataTable();
                     da1.Fill(dt1);
+                  
                     for (int j = 0; j < dt1.Rows.Count; j++)
                     {
                         var tabnd = new TreeNode();
                         tabnd.Text = dt1.Rows[j]["tablename"].ToString();
-                       
+                   
+                      
+                        tabname.Add(tabnd.Text);
+                     
                         tabnd.ImageIndex = 5;
                         tabnd.SelectedImageIndex = 5;
                         tabnd.ContextMenuStrip = contextMenuStriptab2;
@@ -127,11 +146,14 @@ namespace pgAdminMain
 
                         }
                     }
-
-
                 }
 
+                /*add db-tab Relation in the dic*/
+                dbDic.Add(dt.Rows[i]["datname"].ToString(),tabname);
+
             }
+
+     
         }
 
 
@@ -153,7 +175,8 @@ namespace pgAdminMain
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Createtab createtab = new Createtab();
+            string dbname = this.treeView1.SelectedNode.Name;
+            Createtab createtab = new Createtab(dbname,this);
             createtab.Show();
         }
 
