@@ -51,8 +51,8 @@ namespace pgAdminMain
         /*根据选中的table节点，寻找数据库*/
         public NpgsqlConnection Establishconnection(TreeNode table)
         {
-            var con = new NpgsqlConnection(connString + ";DataBase = " + table.Parent.Parent.Parent.Text.ToString());
-            con.Open();
+            Control.connection.SqlConn = new NpgsqlConnection(connString + ";DataBase = " + table.Parent.Parent.Parent.Text.ToString());
+            Control.connection.SqlConn.Open();
             return con;
         }
 
@@ -76,6 +76,7 @@ namespace pgAdminMain
                 dtnd.ContextMenuStrip = contextMenuStripdb2;
                 dtnd.ImageIndex = 2;
                 dtnd.SelectedImageIndex = 2;
+                dtnd.Name = "db";
                 /*schema node*/
                 var sche = new TreeNode();
                 sche.Name = "Schemas";
@@ -175,6 +176,16 @@ namespace pgAdminMain
         {
             Createcon createcon = new Createcon(con,treeView1.SelectedNode,this);
             createcon.Show();
+        }
+
+        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            if (this.treeView1.SelectedNode.Name == "db")
+            {
+                Control.connection.SqlConn.Close();
+                Control.connection.SqlConn = new NpgsqlConnection(connString + ";database="+this.treeView1.SelectedNode.Text.ToString());
+                Control.connection.SqlConn.Open();
+            }
         }
     }
 }

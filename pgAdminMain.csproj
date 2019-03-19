@@ -103,6 +103,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="zhx_background.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="zhx_background.Designer.cs">
+      <DependentUpon>zhx_background.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Createcon.resx">
       <DependentUpon>Createcon.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +136,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="zhx_background.resx">
+      <DependentUpon>zhx_background.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

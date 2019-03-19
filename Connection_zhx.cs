@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
+using System.Data;
 
 namespace pgAdminMain
 {
@@ -15,6 +16,7 @@ namespace pgAdminMain
         private String username;
 
         public NpgsqlConnection SqlConn;
+        public DataSet ds;
 
         public Connection_zhx(String server,String port, String password, String username)
         {
