@@ -79,7 +79,17 @@ namespace pgAdminMain
                 s = "VarChar(" + textBox_length.Text.ToString() + ")";
             else
                 s = comboBox_datatype.SelectedItem.ToString();
-                    var cmdcreate = new NpgsqlCommand("ALTER TABLE " + selecttn.Text.ToString() + " ADD " + textBox_name.Text + " " + s + ";", con);
+            if (checkBox_notnull.Checked)
+            {
+                s += " not null";
+            }
+            //default
+            //if (textBox_default.Text!= "")
+            //{
+            //    s += " default()";
+            //}
+            
+            var cmdcreate = new NpgsqlCommand("ALTER TABLE " + selecttn.Text.ToString() + " ADD " + textBox_name.Text + " " + s + ";", con);
             cmdcreate.ExecuteNonQuery();
 
 
