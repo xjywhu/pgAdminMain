@@ -41,51 +41,59 @@ namespace pgAdminMain
 
         private void save_Click(object sender, EventArgs e)
         {
-          if (textBox_name.Text.ToString()== null)
+          if(textBox_name.Text.ToString()== "")
             {
                 MessageBox.Show("Column name cann't be empty");
+                return;
 
             }
-            else if(comboBox_datatype.SelectedItem.ToString()== "character varying[]" && textBox_length.Text == null)
+            if (comboBox_datatype.SelectedItem==null)
+            {
+                MessageBox.Show("Column datatype cann't be empty");
+                return;
+            }
+            if (comboBox_datatype.SelectedItem.ToString()== "character varying[]" && textBox_length.Text.ToString() == "")
             {
                 MessageBox.Show("The length of character varying[] cann't be empty");
-
+                return;
             }
-            else if (!isInt(textBox_length.Text.ToString()))
+            if (!isInt(textBox_length.Text.ToString()))
             {
                 MessageBox.Show("Length must be an integer");
             }
-            else
+            var cmd = new NpgsqlCommand("select column_name from information_schema.columns where table_schema='public' and table_name= '" + selecttn.Text + "'", con);
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            for (int k = 0; k < dt.Rows.Count; k++)
             {
-                try
+                if (dt.Rows[k]["column_name"].ToString() == textBox_name.Text)
                 {
-                    //var cmdcreate = new NpgsqlCommand("ALTER TABLE test04 ADD gid1_type integer;"; ", con);
-                    var cmdcreate = new NpgsqlCommand("ALTER TABLE " + selecttn.Text.ToString() + " ADD " + textBox_name.Text + " " + textBox_name.Text + ";", con);
-                    cmdcreate.ExecuteNonQuery();
-                    TreeNode tn = null;
-                    foreach (TreeNode t in f.treeView1.Nodes)
-                    {
-                        tn = f.FindNode(t, selecttn.Text);
-                        if (tn != null) break;
-
-                    }
-
-                    /*add con node*/
-
-                    var cond = new TreeNode();
-                    cond.Text = textBox_name.Text;
-                    cond.ImageIndex = 6;
-                    cond.SelectedImageIndex = 6;
-                    cond.ContextMenuStrip = f.contextMenuStripco;
-                    tn.Nodes.Add(cond);
-                    f.Refresh();
-                    this.Close();
-                }
-                catch (Npgsql.PostgresException)
-                {
-                    //MessageBox.Show("The database " + dbname.Text + " has been created");
+                    MessageBox.Show("The column " + textBox_name.Text + " has been created");
+                    return;
                 }
             }
+
+           string s;
+            if (comboBox_datatype.SelectedItem.ToString() == "character varying[]")
+                s = "VarChar(" + textBox_length.Text.ToString() + ")";
+            else
+                s = comboBox_datatype.SelectedItem.ToString();
+                    var cmdcreate = new NpgsqlCommand("ALTER TABLE " + selecttn.Text.ToString() + " ADD " + textBox_name.Text + " " + s + ";", con);
+            cmdcreate.ExecuteNonQuery();
+
+
+            /*add con node*/
+            var cond = new TreeNode();
+            cond.Text = textBox_name.Text;
+            cond.ImageIndex = 6;
+            cond.SelectedImageIndex = 6;
+            cond.ContextMenuStrip = f.contextMenuStripco;
+            f.treeView1.SelectedNode.Nodes.Add(cond);
+            f.Refresh();
+            this.Close();
+ 
+
         }
 
         private void comboBox_datatype_SelectedIndexChanged(object sender, EventArgs e)

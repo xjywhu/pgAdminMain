@@ -111,6 +111,7 @@
             this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
             this.refreshToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
             this.refreshToolStripMenuItem.Text = "Refresh...";
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem4_Click);
             // 
             // splitContainer1
             // 
@@ -161,6 +162,7 @@
             this.treeView1.SelectedImageIndex = 0;
             this.treeView1.Size = new System.Drawing.Size(438, 629);
             this.treeView1.TabIndex = 1;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
             // 
             // imageList1
             // 
@@ -274,6 +276,7 @@
             this.refreshToolStripMenuItem1.Name = "refreshToolStripMenuItem1";
             this.refreshToolStripMenuItem1.Size = new System.Drawing.Size(169, 24);
             this.refreshToolStripMenuItem1.Text = "Refresh...";
+            this.refreshToolStripMenuItem1.Click += new System.EventHandler(this.refreshToolStripMenuItem4_Click);
             // 
             // contextMenuStripsche
             // 
@@ -303,6 +306,7 @@
             this.refreshToolStripMenuItem2.Name = "refreshToolStripMenuItem2";
             this.refreshToolStripMenuItem2.Size = new System.Drawing.Size(145, 24);
             this.refreshToolStripMenuItem2.Text = "Refresh...";
+            this.refreshToolStripMenuItem2.Click += new System.EventHandler(this.refreshToolStripMenuItem4_Click);
             // 
             // contextMenuStriptab
             // 
@@ -312,14 +316,14 @@
             this.refreshToolStripMenuItem3});
             this.contextMenuStriptab.Name = "contextMenuStriptab";
             this.contextMenuStriptab.ShowCheckMargin = true;
-            this.contextMenuStriptab.Size = new System.Drawing.Size(233, 80);
+            this.contextMenuStriptab.Size = new System.Drawing.Size(168, 52);
             // 
             // createToolStripMenuItem2
             // 
             this.createToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1});
             this.createToolStripMenuItem2.Name = "createToolStripMenuItem2";
-            this.createToolStripMenuItem2.Size = new System.Drawing.Size(232, 24);
+            this.createToolStripMenuItem2.Size = new System.Drawing.Size(167, 24);
             this.createToolStripMenuItem2.Text = "Create";
             // 
             // toolStripMenuItem1
@@ -332,8 +336,9 @@
             // refreshToolStripMenuItem3
             // 
             this.refreshToolStripMenuItem3.Name = "refreshToolStripMenuItem3";
-            this.refreshToolStripMenuItem3.Size = new System.Drawing.Size(232, 24);
+            this.refreshToolStripMenuItem3.Size = new System.Drawing.Size(167, 24);
             this.refreshToolStripMenuItem3.Text = "Refresh...";
+            this.refreshToolStripMenuItem3.Click += new System.EventHandler(this.refreshToolStripMenuItem4_Click);
             // 
             // contextMenuStriptab2
             // 
@@ -343,14 +348,14 @@
             this.deleteDropToolStripMenuItem1,
             this.refreshToolStripMenuItem4});
             this.contextMenuStriptab2.Name = "contextMenuStriptab2";
-            this.contextMenuStriptab2.Size = new System.Drawing.Size(170, 76);
+            this.contextMenuStriptab2.Size = new System.Drawing.Size(211, 104);
             // 
             // createToolStripMenuItem3
             // 
             this.createToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.columnToolStripMenuItem});
             this.createToolStripMenuItem3.Name = "createToolStripMenuItem3";
-            this.createToolStripMenuItem3.Size = new System.Drawing.Size(169, 24);
+            this.createToolStripMenuItem3.Size = new System.Drawing.Size(210, 24);
             this.createToolStripMenuItem3.Text = "Create";
             // 
             // columnToolStripMenuItem
@@ -363,14 +368,16 @@
             // deleteDropToolStripMenuItem1
             // 
             this.deleteDropToolStripMenuItem1.Name = "deleteDropToolStripMenuItem1";
-            this.deleteDropToolStripMenuItem1.Size = new System.Drawing.Size(169, 24);
+            this.deleteDropToolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
             this.deleteDropToolStripMenuItem1.Text = "Delete/Drop";
+            this.deleteDropToolStripMenuItem1.Click += new System.EventHandler(this.deleteDropToolStripMenuItem1_Click);
             // 
             // refreshToolStripMenuItem4
             // 
             this.refreshToolStripMenuItem4.Name = "refreshToolStripMenuItem4";
-            this.refreshToolStripMenuItem4.Size = new System.Drawing.Size(169, 24);
+            this.refreshToolStripMenuItem4.Size = new System.Drawing.Size(210, 24);
             this.refreshToolStripMenuItem4.Text = "Refresh";
+            this.refreshToolStripMenuItem4.Click += new System.EventHandler(this.refreshToolStripMenuItem4_Click);
             // 
             // contextMenuStripco
             // 
@@ -386,12 +393,14 @@
             this.deleteDropToolStripMenuItem2.Name = "deleteDropToolStripMenuItem2";
             this.deleteDropToolStripMenuItem2.Size = new System.Drawing.Size(169, 24);
             this.deleteDropToolStripMenuItem2.Text = "Delete/Drop";
+            this.deleteDropToolStripMenuItem2.Click += new System.EventHandler(this.deleteDropToolStripMenuItem2_Click);
             // 
             // refreshToolStripMenuItem5
             // 
             this.refreshToolStripMenuItem5.Name = "refreshToolStripMenuItem5";
             this.refreshToolStripMenuItem5.Size = new System.Drawing.Size(169, 24);
             this.refreshToolStripMenuItem5.Text = "Refresh...";
+            this.refreshToolStripMenuItem5.Click += new System.EventHandler(this.refreshToolStripMenuItem4_Click);
             // 
             // MainForm
             // 
