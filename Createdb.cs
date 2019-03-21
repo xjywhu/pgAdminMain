@@ -46,7 +46,7 @@ namespace pgAdminMain
                     TreeNode tn = null;
                    foreach(TreeNode t in f.treeView1.Nodes)
                     {
-                        tn = f.FindNode(t, "DataBases");
+                        tn = f.tvc.FindNode(t, "DataBases");
                         if (tn!= null) break;
 
                     }
@@ -58,7 +58,7 @@ namespace pgAdminMain
                     dtnd.SelectedImageIndex = 2;
                     tn.Nodes.Add(dtnd);
 
-                    TreeNode t1 = f.Find(f.treeView1, name);
+                    TreeNode t1 = f.tvc.Find(f.treeView1, name);
 
                     var sche = new TreeNode();
                     sche.Name = "Schemas";

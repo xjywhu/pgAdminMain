@@ -35,12 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Columns = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Save = new System.Windows.Forms.Button();
+            this.button_addrows = new System.Windows.Forms.Button();
             this.N = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DataType = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Length = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NotNULL = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.PrimaryKey = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Save = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.tableLayoutPanel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.Gerenel.SuspendLayout();
@@ -61,7 +63,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.31441F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.68559F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1113, 576);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1139, 578);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tabControl1
@@ -72,7 +74,7 @@
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1107, 468);
+            this.tabControl1.Size = new System.Drawing.Size(1133, 469);
             this.tabControl1.TabIndex = 0;
             // 
             // Gerenel
@@ -90,7 +92,7 @@
             // 
             // text_box_tablename
             // 
-            this.text_box_tablename.Location = new System.Drawing.Point(162, 42);
+            this.text_box_tablename.Location = new System.Drawing.Point(343, 74);
             this.text_box_tablename.Name = "text_box_tablename";
             this.text_box_tablename.Size = new System.Drawing.Size(423, 27);
             this.text_box_tablename.TabIndex = 1;
@@ -98,7 +100,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 45);
+            this.label1.Location = new System.Drawing.Point(220, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 19);
             this.label1.TabIndex = 0;
@@ -106,30 +108,58 @@
             // 
             // Columns
             // 
+            this.Columns.Controls.Add(this.button_addrows);
             this.Columns.Controls.Add(this.dataGridView1);
             this.Columns.Location = new System.Drawing.Point(4, 25);
             this.Columns.Name = "Columns";
             this.Columns.Padding = new System.Windows.Forms.Padding(3);
-            this.Columns.Size = new System.Drawing.Size(1099, 439);
+            this.Columns.Size = new System.Drawing.Size(1125, 440);
             this.Columns.TabIndex = 1;
             this.Columns.Text = "Columns";
             this.Columns.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.N,
             this.DataType,
             this.Length,
             this.NotNULL,
-            this.PrimaryKey});
+            this.PrimaryKey,
+            this.delete});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(1093, 433);
+            this.dataGridView1.Size = new System.Drawing.Size(1119, 434);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dataGridView1_EditingControlShowing);
+            // 
+            // Save
+            // 
+            this.Save.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Save.Location = new System.Drawing.Point(532, 495);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(75, 62);
+            this.Save.TabIndex = 1;
+            this.Save.Text = "Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
+            // 
+            // button_addrows
+            // 
+            this.button_addrows.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.button_addrows.Font = new System.Drawing.Font("宋体", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_addrows.Location = new System.Drawing.Point(792, 162);
+            this.button_addrows.Name = "button_addrows";
+            this.button_addrows.Size = new System.Drawing.Size(99, 66);
+            this.button_addrows.TabIndex = 1;
+            this.button_addrows.Text = "+";
+            this.button_addrows.UseVisualStyleBackColor = true;
+            this.button_addrows.Click += new System.EventHandler(this.button_addrows_Click);
             // 
             // N
             // 
@@ -170,22 +200,17 @@
             this.PrimaryKey.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.PrimaryKey.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
-            // Save
+            // delete
             // 
-            this.Save.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Save.Location = new System.Drawing.Point(519, 494);
-            this.Save.Name = "Save";
-            this.Save.Size = new System.Drawing.Size(75, 62);
-            this.Save.TabIndex = 1;
-            this.Save.Text = "Save";
-            this.Save.UseVisualStyleBackColor = true;
-            this.Save.Click += new System.EventHandler(this.Save_Click);
+            this.delete.HeaderText = "delete";
+            this.delete.Name = "delete";
+            this.delete.Text = "----";
             // 
             // Createtab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 576);
+            this.ClientSize = new System.Drawing.Size(1139, 578);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Createtab";
             this.Text = "Createtab";
@@ -209,10 +234,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabPage Columns;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button_addrows;
         private System.Windows.Forms.DataGridViewTextBoxColumn N;
         private System.Windows.Forms.DataGridViewComboBoxColumn DataType;
         private System.Windows.Forms.DataGridViewTextBoxColumn Length;
         private System.Windows.Forms.DataGridViewCheckBoxColumn NotNULL;
         private System.Windows.Forms.DataGridViewCheckBoxColumn PrimaryKey;
+        private System.Windows.Forms.DataGridViewButtonColumn delete;
     }
 }

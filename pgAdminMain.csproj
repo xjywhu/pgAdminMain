@@ -103,6 +103,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeviewController.cs" />
     <Compile Include="zhx_background.cs">
       <SubType>UserControl</SubType>
     </Compile>
