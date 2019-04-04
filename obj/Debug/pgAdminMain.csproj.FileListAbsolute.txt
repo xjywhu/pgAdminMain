@@ -130,3 +130,177 @@ C:\Users\dell\Desktop\pgAdminMain\pgAdminMain\bin\Debug\System.Runtime.CompilerS
 C:\Users\dell\Desktop\pgAdminMain\pgAdminMain\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\dell\Desktop\pgAdminMain\pgAdminMain\bin\Debug\System.ValueTuple.xml
 C:\Users\dell\Desktop\pgAdminMain\pgAdminMain\obj\Debug\pgAdminMain.csproj.CopyComplete
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\pgAdminMain.exe.config
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\pgAdminMain.exe
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\pgAdminMain.pdb
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\Npgsql.pdb
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\Npgsql.xml
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Buffers.xml
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Memory.xml
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.ValueTuple.xml
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csprojAssemblyReference.cache
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Createcon.resources
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Createdb.resources
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Createtab.resources
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Login.resources
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.login_fail.resources
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.MainForm.resources
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Properties.Resources.resources
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.zhx_background.resources
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.GenerateResource.cache
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CoreCompileInputs.cache
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CopyComplete
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.exe
+D:\things about study!\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.pdb
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\pgAdminMain.exe.config
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\pgAdminMain.exe
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\pgAdminMain.pdb
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\Npgsql.pdb
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\Npgsql.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Buffers.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Memory.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.ValueTuple.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Createcon.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Createdb.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Createtab.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Login.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.login_fail.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.MainForm.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Properties.Resources.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.zhx_background.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.GenerateResource.cache
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CopyComplete
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.exe
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.pdb
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\CSkin.dll
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\CSkin.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\IrisSkin2.dll
+C:\Users\dell\Desktop\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\MaterialSkin.dll
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\pgAdminMain.exe.config
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\pgAdminMain.exe
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\pgAdminMain.pdb
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\CSkin.dll
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\IrisSkin2.dll
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\MaterialSkin.dll
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\CSkin.xml
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\Npgsql.pdb
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\Npgsql.xml
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Buffers.xml
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Memory.xml
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\bin\Debug\System.ValueTuple.xml
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csprojAssemblyReference.cache
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Createcon.resources
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Createdb.resources
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Createtab.resources
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Login.resources
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.login_fail.resources
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.MainForm.resources
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.Properties.Resources.resources
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.zhx_background.resources
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.GenerateResource.cache
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CoreCompileInputs.cache
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CopyComplete
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.exe
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.pdb
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.info_schema.resources
+D:\coding!!\软件开发\pgAdminMain-dev\pgAdminMain-dev\pgAdminMain-dev\obj\Debug\pgAdminMain.ChangeType.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\pgAdminMain.exe.config
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\pgAdminMain.exe
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\pgAdminMain.pdb
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\CSkin.dll
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\IrisSkin2.dll
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\MaterialSkin.dll
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\CSkin.xml
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\Npgsql.pdb
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\Npgsql.xml
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\System.Buffers.xml
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\System.Memory.xml
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\bin\Debug\System.ValueTuple.xml
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.ChangeType.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Createcon.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Createdb.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Createtab.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.info_schema.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Login.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Login_fail.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.MainForm.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Properties.Resources.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.zhx_background.resources
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.GenerateResource.cache
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CopyComplete
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.exe
+C:\Users\dell\Desktop\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.pdb
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\pgAdminMain.exe.config
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\pgAdminMain.exe
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\pgAdminMain.pdb
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\CSkin.dll
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\IrisSkin2.dll
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\MaterialSkin.dll
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\CSkin.xml
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\Npgsql.pdb
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\Npgsql.xml
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\System.Buffers.xml
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\System.Memory.xml
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\bin\Debug\System.ValueTuple.xml
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.csprojAssemblyReference.cache
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.ChangeType.resources
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Createcon.resources
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Createdb.resources
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Createtab.resources
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.info_schema.resources
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Login.resources
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Login_fail.resources
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.MainForm.resources
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.Properties.Resources.resources
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.GenerateResource.cache
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CoreCompileInputs.cache
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CopyComplete
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.exe
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.pdb
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.InsertValue.resources
+D:\things about study!\大二下\Database\pgAdminMain\pgAdminMain-dev\obj\Debug\pgAdminMain.QueryBackground.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\pgAdminMain.exe.config
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\pgAdminMain.exe
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\pgAdminMain.pdb
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\CSkin.dll
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\IrisSkin2.dll
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\MaterialSkin.dll
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\CSkin.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\Npgsql.pdb
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\Npgsql.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\System.Buffers.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\System.Memory.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\bin\Debug\System.ValueTuple.xml
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.ChangeType.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.Createcon.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.Createdb.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.Createtab.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.Info_schema.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.InsertValue.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.Login.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.Login_fail.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.MainForm.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.Properties.Resources.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.QueryBackground.resources
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.GenerateResource.cache
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.csproj.CopyComplete
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.exe
+C:\Users\dell\Desktop\pgAdminMain-dev\obj\Debug\pgAdminMain.pdb

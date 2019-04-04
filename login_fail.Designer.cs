@@ -1,6 +1,6 @@
 ﻿namespace pgAdminMain
 {
-    partial class login_fail
+    partial class Login_fail
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,56 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.Confirm_fail = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.skinButton1 = new CCWin.SkinControl.SkinButton();
+            this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
             this.SuspendLayout();
             // 
-            // label1
+            // skinButton1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(182, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "登陆失败！\r\n请检查登陆信息";
+            this.skinButton1.BackColor = System.Drawing.Color.Transparent;
+            this.skinButton1.BaseColor = System.Drawing.SystemColors.ActiveCaption;
+            this.skinButton1.BorderColor = System.Drawing.Color.Black;
+            this.skinButton1.ControlState = CCWin.SkinClass.ControlState.Normal;
+            this.skinButton1.DownBack = null;
+            this.skinButton1.Font = new System.Drawing.Font("华文新魏", 12F, System.Drawing.FontStyle.Bold);
+            this.skinButton1.Location = new System.Drawing.Point(137, 211);
+            this.skinButton1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.skinButton1.MouseBack = null;
+            this.skinButton1.Name = "skinButton1";
+            this.skinButton1.NormlBack = null;
+            this.skinButton1.Radius = 20;
+            this.skinButton1.RoundStyle = CCWin.SkinClass.RoundStyle.All;
+            this.skinButton1.Size = new System.Drawing.Size(132, 52);
+            this.skinButton1.TabIndex = 3;
+            this.skinButton1.Text = "确认";
+            this.skinButton1.UseVisualStyleBackColor = false;
+            this.skinButton1.Click += new System.EventHandler(this.skinButton1_Click);
             // 
-            // Confirm_fail
+            // skinLabel1
             // 
-            this.Confirm_fail.Location = new System.Drawing.Point(169, 151);
-            this.Confirm_fail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Confirm_fail.Name = "Confirm_fail";
-            this.Confirm_fail.Size = new System.Drawing.Size(113, 36);
-            this.Confirm_fail.TabIndex = 2;
-            this.Confirm_fail.Text = "Confirm";
-            this.Confirm_fail.UseVisualStyleBackColor = true;
-            this.Confirm_fail.Click += new System.EventHandler(this.Confirm_fail_Click);
+            this.skinLabel1.AutoSize = true;
+            this.skinLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel1.BorderColor = System.Drawing.Color.White;
+            this.skinLabel1.Font = new System.Drawing.Font("华文新魏", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel1.Location = new System.Drawing.Point(133, 134);
+            this.skinLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.skinLabel1.Name = "skinLabel1";
+            this.skinLabel1.Size = new System.Drawing.Size(152, 36);
+            this.skinLabel1.TabIndex = 4;
+            this.skinLabel1.Text = "连接失败！\r\n请检查输入信息！\r\n";
+
             // 
-            // login_fail
+            // Login_fail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 251);
-            this.Controls.Add(this.Confirm_fail);
-            this.Controls.Add(this.label1);
-            this.Name = "login_fail";
+            this.ClientSize = new System.Drawing.Size(464, 347);
+            this.Controls.Add(this.skinLabel1);
+            this.Controls.Add(this.skinButton1);
+            this.Font = new System.Drawing.Font("华文新魏", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Name = "Login_fail";
             this.Text = "login_fail";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -67,8 +85,7 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Confirm_fail;
+        private CCWin.SkinControl.SkinButton skinButton1;
+        private CCWin.SkinControl.SkinLabel skinLabel1;
     }
 }

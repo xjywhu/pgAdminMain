@@ -7,17 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MaterialSkin.Controls;
+using MaterialSkin;
 
 namespace pgAdminMain
 {
-    public partial class login_fail : Form
+    public partial class Login_fail : MaterialForm
     {
-        public login_fail()
+        private readonly MaterialSkinManager materialSkinManager;
+        public Login_fail()
         {
+
             InitializeComponent();
+            materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
         }
 
-        private void Confirm_fail_Click(object sender, EventArgs e)
+        private void skinButton1_Click(object sender, EventArgs e)
         {
             this.Close();
         }

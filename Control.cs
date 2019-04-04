@@ -11,5 +11,7 @@ namespace pgAdminMain
         public static Connection_zhx connection;
         public static Login login;
         public static MainForm mainform;
+        public static QueryBackground background;
+        public static Info_schema background2;
     }
 }

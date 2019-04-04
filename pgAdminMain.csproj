@@ -8,9 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>pgAdminMain</RootNamespace>
     <AssemblyName>pgAdminMain</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +33,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CSkin, Version=16.1.14.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\cskin.16.1.14.3\lib\net40\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\IrisSkin.2.0.0\lib\net40\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="Npgsql, Version=4.0.5.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>..\packages\Npgsql.4.0.5\lib\net45\Npgsql.dll</HintPath>
     </Reference>
@@ -63,6 +73,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeType.Designer.cs">
+      <DependentUpon>ChangeType.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connection_zhx.cs" />
     <Compile Include="Control.cs" />
     <Compile Include="Createcon.cs">
@@ -83,17 +99,30 @@
     <Compile Include="Createtab.Designer.cs">
       <DependentUpon>Createtab.cs</DependentUpon>
     </Compile>
+    <Compile Include="Info_schema.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Info_schema.Designer.cs">
+      <DependentUpon>Info_schema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertValue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertValue.Designer.cs">
+      <DependentUpon>InsertValue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JudgeType.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="login_fail.cs">
+    <Compile Include="Login_fail.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login_fail.Designer.cs">
-      <DependentUpon>login_fail.cs</DependentUpon>
+    <Compile Include="Login_fail.Designer.cs">
+      <DependentUpon>Login_fail.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -104,12 +133,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreeviewController.cs" />
-    <Compile Include="zhx_background.cs">
+    <Compile Include="QueryBackground.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="zhx_background.Designer.cs">
-      <DependentUpon>zhx_background.cs</DependentUpon>
+    <Compile Include="QueryBackground.Designer.cs">
+      <DependentUpon>QueryBackground.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ChangeType.resx">
+      <DependentUpon>ChangeType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Createcon.resx">
       <DependentUpon>Createcon.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,11 +151,17 @@
     <EmbeddedResource Include="Createtab.resx">
       <DependentUpon>Createtab.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Info_schema.resx">
+      <DependentUpon>Info_schema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertValue.resx">
+      <DependentUpon>InsertValue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login_fail.resx">
-      <DependentUpon>login_fail.cs</DependentUpon>
+    <EmbeddedResource Include="Login_fail.resx">
+      <DependentUpon>Login_fail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -136,9 +174,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="zhx_background.resx">
-      <DependentUpon>zhx_background.cs</DependentUpon>
+    <EmbeddedResource Include="QueryBackground.resx">
+      <DependentUpon>QueryBackground.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -150,6 +189,70 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Skins\Calmness.ssk" />
+    <None Include="Skins\CalmnessColor1.ssk" />
+    <None Include="Skins\CalmnessColor2.ssk" />
+    <None Include="Skins\DeepCyan.ssk" />
+    <None Include="Skins\DeepGreen.ssk" />
+    <None Include="Skins\DeepOrange.ssk" />
+    <None Include="Skins\DiamondBlue.ssk" />
+    <None Include="Skins\DiamondGreen.ssk" />
+    <None Include="Skins\Eighteen.ssk" />
+    <None Include="Skins\EighteenColor1.ssk" />
+    <None Include="Skins\EighteenColor2.ssk" />
+    <None Include="Skins\Emerald.ssk" />
+    <None Include="Skins\EmeraldColor1.ssk" />
+    <None Include="Skins\EmeraldColor2.ssk" />
+    <None Include="Skins\EmeraldColor3.ssk" />
+    <None Include="Skins\GlassBrown.ssk" />
+    <None Include="Skins\GlassGreen.ssk" />
+    <None Include="Skins\GlassOrange.ssk" />
+    <None Include="Skins\Longhorn.ssk" />
+    <None Include="Skins\MacOS.ssk" />
+    <None Include="Skins\Midsummer.ssk" />
+    <None Include="Skins\MidsummerColor1.ssk" />
+    <None Include="Skins\MidsummerColor2.ssk" />
+    <None Include="Skins\MidsummerColor3.ssk" />
+    <None Include="Skins\MP10.ssk" />
+    <None Include="Skins\MSN.ssk" />
+    <None Include="Skins\OneBlue.ssk" />
+    <None Include="Skins\OneCyan.ssk" />
+    <None Include="Skins\OneGreen.ssk" />
+    <None Include="Skins\OneOrange.ssk" />
+    <None Include="Skins\Page.ssk" />
+    <None Include="Skins\PageColor1.ssk" />
+    <None Include="Skins\PageColor2.ssk" />
+    <None Include="Skins\RealOne.ssk" />
+    <None Include="Skins\Silver.ssk" />
+    <None Include="Skins\SilverColor1.ssk" />
+    <None Include="Skins\SilverColor2.ssk" />
+    <None Include="Skins\SportsBlack.ssk" />
+    <None Include="Skins\SportsBlue.ssk" />
+    <None Include="Skins\SportsCyan.ssk" />
+    <None Include="Skins\SportsGreen.ssk" />
+    <None Include="Skins\SportsOrange.ssk" />
+    <None Include="Skins\SteelBlack.ssk" />
+    <None Include="Skins\SteelBlue.ssk" />
+    <None Include="Skins\vista1.ssk" />
+    <None Include="Skins\vista1_green.ssk" />
+    <None Include="Skins\Vista2_color1.ssk" />
+    <None Include="Skins\Vista2_color2.ssk" />
+    <None Include="Skins\Vista2_color3.ssk" />
+    <None Include="Skins\Vista2_color4.ssk" />
+    <None Include="Skins\Vista2_color5.ssk" />
+    <None Include="Skins\Vista2_color6.ssk" />
+    <None Include="Skins\Vista2_color7.ssk" />
+    <None Include="Skins\Warm.ssk" />
+    <None Include="Skins\WarmColor1.ssk" />
+    <None Include="Skins\WarmColor2.ssk" />
+    <None Include="Skins\WarmColor3.ssk" />
+    <None Include="Skins\Wave.ssk" />
+    <None Include="Skins\WaveColor1.ssk" />
+    <None Include="Skins\WaveColor2.ssk" />
+    <None Include="Skins\XPBlue.ssk" />
+    <None Include="Skins\XPGreen.ssk" />
+    <None Include="Skins\XPOrange.ssk" />
+    <None Include="Skins\XPSilver.ssk" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
